@@ -19,6 +19,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Setup Poetry
-        uses:
+        uses: Gr1N/setup-poetry@v7
       - name: Run Tests
         run: poetry run pytest
