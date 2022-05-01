@@ -21,4 +21,6 @@ jobs:
       - name: Setup Poetry
         uses: Gr1N/setup-poetry@v7
       - name: Run Tests
-        run: poetry run pytest
+        run: |
+          poetry install
+          poetry run pytest
